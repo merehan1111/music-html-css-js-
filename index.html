@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Music</title>
+  
+    
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <h2 id="title">MY FAVORITE SONG </h2>
+            <h3 id="artist">Umm Kulthum & AbdelHalim & Amr Diab & shereen</h3>
+            <div class="image">
+                <img src="./image/amr.jpg" alt="#">
+            </div>
+            <audio src="./music/amr.mp3" controls></audio>
+            <div class="control">
+                <i class='bx bx-skip-previous-circle' id="previous" title="previous"></i>
+                <i class='bx bx-play-circle main-button'  id="play" title="play" ></i>
+                <i class='bx bx-skip-next-circle' id="next" title="next"></i>
+
+            </div>
+            <div class="slider">
+                <i class='bx bxs-volume-mute'></i>
+                <input type="range" min="1" max="100" value="99" class="volume" onchange="setVolume()">
+                <i class='bx bxs-volume-full'></i>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

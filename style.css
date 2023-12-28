@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 60%;
+    font-family: "sans";
+}
+.main
+{
+    width: 100vw;
+    height: 100vh;
+    background-image:linear-gradient(rgb(157, 224, 253),rgb(236, 156, 250));
+    display: grid;
+    place-items: center;
+}
+.container
+{
+    width: 25rem;
+    height: 55rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 25px rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+
+}
+.container #title
+{
+    color: #fff;
+    text-transform:uppercase;
+    letter-spacing: 0.02rem;
+    word-spacing: 0.5rem;
+    margin: 2rem 0 1rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+
+
+}
+.container #artist
+{
+  color: #fff;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  font-weight: 200;
+}
+audio
+{
+    display: none;
+}
+.image
+{
+    width: 21rem;
+    height: 21rem;
+    margin: auto;
+}
+img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
+
+}
+.control .bx
+{
+    width: 4rem;
+    height: 4rem;
+    background-color:#b8ccf9;
+    border-radius: 50%;
+    color: #f6f6f6;
+    font-size: 4rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.control
+{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 5rem;
+}
+ .control .main-button
+{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color:#b8ccf9;
+    color: #f6f6f6;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+#previous:hover,
+#next:hover {
+  background-color: white;
+  color: rgb(116, 113, 113);
+}
+.control .main-button:hover
+{
+    background-color: white;
+    color: #6b6969;
+}
+
+.anime {
+    animation: rotatePlayer 3s linear 3s;
+  }
+
+  .volume {
+    
+    appearance: none;
+    height: 5px;
+    background: #353a43;
+    transition: opacity .2s;
+  }
+  .volume::after {
+    
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: rgb(252, 205, 205);
+    border: 2.5px solid #101520;
+    cursor: pointer;
+    border-radius: 100%;
+  }
+  
+  .volume:hover {
+    opacity: 1.0;
+  }
+  .volume {
+    margin-top: 15px;
+    width: 60%;}
+    .slider i
+    {
+        width: 15px;
+        color:rgb(3, 29, 37);
+        padding: 10px;
+    }
+
+
